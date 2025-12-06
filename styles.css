@@ -1,31 +1,70 @@
-body {
-    font-family: Georgia, 'Times New Roman', Times, serif
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-#beyondDoctrine {
-    width: 70vmin;
+:root {
+    --backgroundColor1: rgb(27, 27, 94);
+    --backgroundColor2: rgb(78, 35, 148);
+    --linkColor: blue;
+    --textColor1: rgb(224, 231, 163);
+    --secondaryColor2: blue;
+}
+
+
+/* Hamburger / Basic Navigation */
+
+.hamburger {
+    cursor: pointer;
+    padding; 16px;
+    width: 32px;
+}
+
+.hamburger div {
+    height: 4px;
+    background: rgb(34, 34, 34);
+    margin: 6px 0;
+}
+
+.nav {
+    display: none;
+    background: #eee;
+    padding: 16px;
+    max-width: 300px;
+}
+
+.nav.show {
+    display: block;
+}
+
+.plug {
+    display: block;
     text-align: center;
-    text-shadow: 2px 2px 10px white;
-    background: linear-gradient(45deg, blue, darkblue);
-    padding: 5px;
-    border-radius: 10px 5px
-}
-
-.grid {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-}
-
-#diary, #research, #tbd {
-    border-radius: 5px 3px;
-    width: 30vw;
-    height: 20px;
-    background: linear-gradient(45deg, blue, skyblue)
-}
-.grid > div > a {
-    
     text-decoration: none;
-    color: black;
-    text-shadow: 2px 2px 10px white;
+    color: var(--textColor1);
+    padding: 4px;
+    background: linear-gradient(45deg, var(--backgroundColor1), var(--backgroundColor2));
+    border-radius: 4px 5px;
+}
+
+hr {
+    border: 1px solid var(--backgroundColor1);
+}
+
+
+/* Cosmic Diary Homepage */
+
+#diary {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.entry {
+    padding: 20px;
+    width: 100px;
+    text-align: center;
+    color: var(--textColor1);
+    background: linear-gradient(45deg, var(--backgroundColor1), var(--backgroundColor2));
+    border-radius: 5px 7px;
+    text-decoration: none;
 }

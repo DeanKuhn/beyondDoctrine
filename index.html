@@ -1,26 +1,50 @@
 <!DOCTYPE html>
-<html lang=""en">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Beyond Doctrine - Where Scripture Defines Itself.">
+        <meta name="theme-color" content="blue">
         <title>Beyond Doctrine</title>
+        <link rel="stylesheet" href="styles.css">
     </head>
+
     <body>
-        <h1>
-            Beyond Doctrine
-        </h1>
+        <div class ="hamburger" onclick="toggleNav()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
 
-        <p>
-            Welcome to my first website, where I explore the 
-            doctrine behind religion.
-        </p>
+        <div id="nav" class="nav">
+            <a id="pug" class="plug" href="cosmicDiary.html">Cosmic Diary</a><br>
+            <a id="pug" class="plug" href="researchhome.html">Research & Papers</a><br>
+            <a id="pug" class="plug" href="aboutme.html">About Me</a><br>
+        </div>
 
-        <p>
-            I will first be looking into the beliefs
-            of Jehovah's Witnesse.
-        </p>
+        <script>
+            function toggleNav() {
+                document.getElementById('nav').classList.toggle('show');
+            }
+        </script>
+
+        <main>
+            <p></p>
+            <hr>
+            <h1>Beyond Doctrine</h1>
+            <h4>
+                Where scripture defines itself.
+            </h4>
+            <p>
+                No bias.  No agenda.  Minimal commentary.
+                <br>The Bible, free of interpretation.
+            </p>
+            <a class="plug" href="bibleAuthor.html">
+                Check out the newest article!
+            </a>
+
+        </main>
+
+
     </body>
-
-
-
-
 </html>

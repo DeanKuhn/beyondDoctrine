@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="The Cosmic Diary - Where Truth Hurts">
+        <meta name="theme-color" content="blue">
+        <title>Cosmic Diary</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <div class ="hamburger" onclick="toggleNav()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <div id="nav" class="nav">
+            <a id="pug" class="plug" href="cosmicDiary.html">Cosmic Diary</a><br>
+            <a id="pug" class="plug" href="researchhome.html">Research & Papers</a><br>
+            <a id="pug" class="plug" href="aboutme.html">About Me</a><br>
+        </div>
+
+        <script>
+            function toggleNav() {
+                document.getElementById('nav').classList.toggle('show');
+            }
+        </script>
+
+        <main>
+            <p></p>
+            <hr>
+            <h1>The Cosmic Diary</h1>
+            <h4>It's not as cool as it sounds.</h4>
+            <p>
+                Check out a date. Any date.<hr>
+            </p>
+
+            <section id="diary">
+                <a class="entry" href="CosmicDiary/2025-12-05.html">2025-12-05</a>
+                <a class="entry">BLOB</a>
+                <a class="entry">BLOB</a>
+                <a class="entry">BLOB</a>
+                <a class="entry">BLOB</a>
+                <a class="entry">BLOB</a>
+                <a class="entry">BLOB</a>
+                <a class="entry">BLOB</a>
+                <a class="entry">BLOB</a>
+            </section>
+        </main>
+
+    </body>
+
+</html>
