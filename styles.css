@@ -36,6 +36,21 @@
     display: block;
 }
 
+.plug:hover {
+    color: white;
+    text-shadow: 0 0 5px black;
+    background: linear-gradient(270deg, red, orange, yellow, green, blue, indigo, violet);
+    background-size: 1400% 1400%;
+    animation: rainbow 10s ease infinite;
+
+}
+
+@keyframes rainbow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% {background-position: 0% 50%; }
+}
+
 .plug {
     display: block;
     text-align: center;
@@ -48,6 +63,23 @@
 
 hr {
     border: 1px solid var(--backgroundColor1);
+}
+
+
+/* Password Fun */
+
+#pw {
+    color: white;
+    text-shadow: 0 0 5px black;
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    background-size: 1400% 1400%;
+    animation: rainbow 10s ease infinite;
+
+}
+
+#pw::placeholder {
+    color: white;
+    text-shadow: 0 0 5px black;
 }
 
 
@@ -76,7 +108,8 @@ hr {
 
 /* Research Papers Search Box */
 
-.resultBox {
+.resultLink {
+    display: block;
     color: var(--textColor1);
     max-width: 500px;
     padding: 10px;
@@ -89,15 +122,20 @@ hr {
     text-decoration: none;
 }
 
-.searchLink {
-    color: var(--textColor1);
-    text-decoration: none;
+
+.resultLink:hover {
+    background: #333;
+}
+
+#searchBox {
+    border: 2px solid black;
 }
 
 
 /* Research Papers Links */
 
 .paper {
+    display: block;
     color: var(--textColor1);
     max-width: 500px;
     padding: 10px;
@@ -110,10 +148,7 @@ hr {
     text-decoration: none;
 }
 
-.paper > a {
-    color: var(--textColor1);
-    text-decoration: none;
-}
+
 
 
 /* Contact Me Email */
@@ -135,3 +170,32 @@ hr {
     color: var(--textColor1);
     text-decoration: none;
 }
+
+/* Tables */
+
+    table.bibleTable {
+        width: auto;
+        border-collapse: collapse;
+        margin-top: 20px;
+        background: linear-gradient(45deg, var(--backgroundColor1), var(--backgroundColor2));
+        color: var(--textColor1);
+    }
+
+    table.bibleTable th, table.bibleTable td {
+        padding: 8px 12px;
+        text-align: left;
+    }
+
+    table.bibleTable th {
+        background-color: #333;
+    }
+
+    table.bibleTable tbody tr:hover {
+        background-color: #2a2a2a;
+    }
+
+    /* Optional: scrollable table if too tall */
+    .tableContainer {
+        max-height: 400px;
+        overflow-y: auto;
+    }

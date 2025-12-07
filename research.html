@@ -49,42 +49,32 @@
 
             <script>
                 document.getElementById('searchBox').addEventListener('input', function () {
-                const term = this.value.toLowerCase();
-                const output = document.getElementById('results');
-                
-                if (term.trim() === "") {
+                    const term = this.value.toLowerCase();
+                    const output = document.getElementById('results');
                     output.innerHTML = "";
-                    return;
-                }
-                
-                output.innerHTML = "";
 
-                const hits = pages.filter(p => p.title.toLowerCase().includes(term));
+                    if (term.trim() === "") return;
 
-                hits.forEach(p => {
-                    const link = document.createElement('a');
-                    link.href = p.file;
-                    link.textContent = p.title;
-                    link.className = 'searchLink';
-                    
-                    const box = document.createElement('div');
-                    box.className = 'resultBox';
-                    box.appendChild(link);
+                    const hits = pages.filter(p => p.title.toLowerCase().includes(term));
 
-                    output.appendChild(box);
+                    hits.forEach(p => {
+                        const link = document.createElement('a');
+                        link.href = p.file;
+                        link.textContent = p.title;
+                        link.className = 'resultLink'; // style the link itself
+
+                        output.appendChild(link);
+                    });
                 });
-            });
             </script>
 
             <section>
                 <hr>
-                <div class="paper">
-                    <a href="ResearchPapers/bibleAuthorship.html">Who Really Wrote the Bible?</a>
-                </div>
 
-                <div class="paper">
-                    <a href="ResearchPapers/jerusalemDestruction.html">When Was Ancient Jerusalem Really Destroyed?</a>
-                </div>
+                <a  class="paper" href="ResearchPapers/bibleAuthorship.html">Who Really Wrote the Bible?</a>
+
+
+                <a class="paper" href="ResearchPapers/jerusalemDestruction.html">When Was Ancient Jerusalem Really Destroyed?</a>
             </section>
         </main>
     </body>
