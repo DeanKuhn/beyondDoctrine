@@ -10,6 +10,10 @@
     --secondaryColor2: blue;
 }
 
+input:focus {
+    outline: none;
+}
+
 
 /* Hamburger / Basic Navigation */
 
@@ -69,19 +73,16 @@ hr {
 /* Password Fun */
 
 #pw {
-    color: white;
-    text-shadow: 0 0 5px black;
+border: 2px solid black;              
+}
+
+#enterButton {
     background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
     background-size: 1400% 1400%;
     animation: rainbow 10s ease infinite;
-
-}
-
-#pw::placeholder {
     color: white;
     text-shadow: 0 0 5px black;
 }
-
 
 /* Cosmic Diary Homepage */
 
@@ -127,7 +128,7 @@ hr {
     background: #333;
 }
 
-#searchBox {
+#searchBox:hover {
     border: 2px solid black;
 }
 
