@@ -206,4 +206,12 @@ border: 2px solid black;
 
     
 
-    
+/* Paper heading class */
+
+.paperHeading {
+    padding: 7px;
+    border-radius: 4px;
+    color: var(--textColor1);
+    background: linear-gradient(45deg, var(--backgroundColor1), var(--backgroundColor2));
+    width: 600px;
+}
