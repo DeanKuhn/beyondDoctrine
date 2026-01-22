@@ -221,4 +221,5 @@ border: 2px solid black;
 
 .padding_type {
     padding: 5px;
+    max-width: 600px;
 }
