@@ -215,3 +215,10 @@ border: 2px solid black;
     background: linear-gradient(45deg, var(--backgroundColor1), var(--backgroundColor2));
     width: 600px;
 }
+
+
+/* padding class */
+
+.padding_type {
+    padding: 5px;
+}
